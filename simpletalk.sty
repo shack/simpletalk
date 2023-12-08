@@ -1,0 +1,60 @@
+% SIC colors
+\definecolor{SICBlue}{HTML}{213E61}
+\definecolor{SICGreen}{HTML}{337851}
+\definecolor{SICOrange}{HTML}{F0AE43}
+\definecolor{SICMagenta}{HTML}{DE0F70}
+\definecolor{SICGrey}{HTML}{E4E6D8}
+
+% Paul Tol Vibrant colors
+% https://personal.sron.nl/~pault/
+\definecolor{TolBlue}   {HTML}{0077BB}
+\definecolor{TolCyan}   {HTML}{33BBEE}
+\definecolor{TolTeal}   {HTML}{009988}
+\definecolor{TolOrange} {HTML}{EE7733}
+\definecolor{TolRed}    {HTML}{CC3311}
+\definecolor{TolMagenta}{HTML}{EE3377}
+\definecolor{TolGrey}   {HTML}{BBBBBB}
+
+\colorlet{blue}   {TolBlue}
+\colorlet{green}  {TolTeal}
+\colorlet{red}    {TolRed}
+\colorlet{orange} {TolOrange}
+\colorlet{grey}   {TolGrey}
+\colorlet{magenta}{TolMagenta}
+\colorlet{cyan}   {TolCyan}
+
+\colorlet{primary}{blue}
+\colorlet{secondary}{orange}
+\colorlet{tertiary}{teal}
+\colorlet{quarternary}{magenta}
+
+\setbeamercolor{palette primary}{fg=primary}
+\setbeamercolor{palette secondary}{fg=secondary}
+\setbeamercolor{palette tertiary}{fg=tertiary}
+\setbeamercolor{palette quarternary}{fg=quarternary}
+\setbeamercolor{alerted text}{fg=magenta}
+\setbeamercolor{structure}{fg=blue} % itemize, enumerate, etc
+
+% -- as secondary itemize symbol
+\setbeamertemplate{itemize subitem}{--}
+% bold header fonts
+\setbeamerfont{structure}{series=\bfseries}
+% not bold frame subtitle
+\setbeamerfont{framesubtitle}{shape=\mdseries}
+% more space on the slide
+\setbeamersize{text margin left=1em, text margin right=2em}
+% remove navigation symbols
+\beamertemplatenavigationsymbolsempty
+% Add slide numbers
+\setbeamertemplate{footline}[frame number]
+
+% emphasize monochromatic
+\newcommand{\emphmono}[1]{\textbf{#1}}
+% emphasize primary color
+\renewcommand{\emph}[1]{\textcolor{secondary}{#1}}
+% emphasize primary color bold
+\newcommand{\Emph}[1]{\textbf{\emph{#1}}}
+% emphasize other color
+\newcommand{\empho}[1]{\textcolor{tertiary}{#1}}
+% emphasize other color bold
+\newcommand{\Empho}[1]{\textbf{\empho{#1}}}

@@ -1,0 +1,40 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{lipsum}
+\usepackage{simpletalk}
+\usepackage{simpletalkpack}
+
+\begin{document}
+
+\begin{frame}
+    \frametitle{Hello}
+    \framesubtitle{This is a Test}
+    \lipsum[1][2-3]
+    That is a \texttt{Verbatim} test.
+    \begin{itemize}
+        \item \emphmono{emphmono} \emph{emph} \empho{empho} \Emph{Emph} \Empho{Empho} \alert{alert}
+        \item \lipsum[1][1]
+        \begin{itemize}
+            \item \lipsum[1][2-4]
+            \item \lipsum[1][1]
+        \end{itemize}
+        \item \lipsum[1][2-4]
+        \item
+            \textcolor{blue}{blue}
+            \textcolor{orange}{orange}
+            \textcolor{green}{green}
+            \textcolor{magenta}{magenta}
+            \textcolor{red}{red}
+            \textcolor{cyan}{cyan}
+            \textcolor{grey}{grey}
+        \item
+            \textcolor{primary}{primary}
+            \textcolor{secondary}{secondary}
+            \textcolor{tertiary}{tertiary}
+            \textcolor{quarternary}{quarternary}
+    \end{itemize}
+    \begin{block}{Some Block}
+       \lipsum[1][1] \faChessKnight
+    \end{block}
+\end{frame}
+
+\end{document}
