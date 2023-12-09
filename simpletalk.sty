@@ -37,6 +37,9 @@
 
 % -- as secondary itemize symbol
 \setbeamertemplate{itemize subitem}{--}
+
+\settowidth{\leftmargini}{\usebeamertemplate{itemize item}}
+\addtolength{\leftmargini}{\labelsep}
 % bold header fonts
 \setbeamerfont{structure}{series=\bfseries}
 % not bold frame subtitle
