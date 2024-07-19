@@ -33,19 +33,29 @@
 \setbeamercolor{palette tertiary}{fg=tertiary}
 \setbeamercolor{palette quarternary}{fg=quarternary}
 \setbeamercolor{alerted text}{fg=magenta}
+\setbeamercolor{example text}{fg=teal}
 \setbeamercolor{structure}{fg=blue} % itemize, enumerate, etc
 
 % -- as secondary itemize symbol
 \setbeamertemplate{itemize subitem}{--}
 
+\setbeamercolor{block title}{fg=white,bg=primary}
+\setbeamercolor{block body}{bg=black!10}
+\setbeamercolor{block title alerted}{fg=white,bg=alerted text.fg}
+\setbeamercolor{block body alerted}{fg=black,bg=black!10}
+\setbeamercolor{block title example}{fg=white,bg=example text.fg}
+\setbeamercolor{block body example}{fg=black,bg=black!10}
+
 \settowidth{\leftmargini}{\usebeamertemplate{itemize item}}
 \addtolength{\leftmargini}{\labelsep}
+% huge title font
+\setbeamerfont*{title}{size=\Large, series=\bfseries}
 % bold header fonts
-\setbeamerfont{structure}{series=\bfseries}
+\setbeamerfont{frametitle}{series=\bfseries}
 % not bold frame subtitle
 \setbeamerfont{framesubtitle}{shape=\mdseries}
 % more space on the slide
-\setbeamersize{text margin left=1em, text margin right=2em}
+\setbeamersize{text margin left=1em, text margin right=1em}
 % remove navigation symbols
 \beamertemplatenavigationsymbolsempty
 % Add slide numbers
